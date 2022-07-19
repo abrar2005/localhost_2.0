@@ -1,0 +1,5 @@
+    #How to use template
+
+    1)Unzip the index.php and the asset folder in your xampp/htdocs.
+    2)make a new folder called sites (MUST BE AS SPEFICIED)
+    3)copy all that you had in you htdocs and paste it into sites folder

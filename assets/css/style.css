@@ -1,0 +1,104 @@
+:root {
+	--blue: rgb(114, 137, 218);
+	--white: rgb(35, 39, 42);
+	--grey: rgb(59, 59, 59);
+	--dark-grey: rgb(223, 222, 222);
+	--black: rgb(236, 234, 234);
+}
+
+.light {
+	--blue: rgb(114, 137, 218);
+	--white: rgb(35, 39, 42);
+	--grey: rgb(59, 59, 59);
+	--dark-grey: rgb(223, 222, 222);
+	--black: rgb(236, 234, 234);
+}
+
+.dark {
+	--blue: rgb(114, 137, 218);
+	--white: rgb(255, 255, 255);
+	--grey: rgb(170, 178, 184);
+	--dark-grey: rgb(44, 47, 51);
+	--black: rgb(35, 39, 42);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	color: var(--white);
+	font-family: "nunito";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--black);
+	padding: 2rem 4rem;
+	letter-spacing: 1.3;
+	transition: background ease 00ms;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	color: var(--blue);
+	position: relative;
+}
+
+table {
+	width: 100%;
+	background-color: var(--dark-grey);
+	border-radius: 20px;
+	padding: 2rem;
+}
+
+header {
+	/* background-color: azure; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 0rem;
+}
+
+thead td {
+	padding-bottom: 2rem;
+	font-weight: 800;
+}
+
+tbody tr td {
+	padding: 0.5rem 0;
+}
+
+tbody tr td:nth-child(1) {
+	display: flex;
+}
+
+tbody td a,
+tbody td p {
+	color: var(--grey);
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+tbody tr a:hover,
+tbody tr:hover {
+	color: var(--blue);
+	text-decoration: underline;
+	transition: all ease-in 150ms;
+}
+
+tbody tr td img {
+	padding-right: 10px;
+	height: 1.2rem;
+	aspect-ratio: 1.5/1;
+}
+
+.breadCrumb {
+	color: var(--blue);
+	border-radius: 30px;
+	padding: 0.5rem 2rem;
+	background-color: var(--dark-grey);
+	width: fit-content;
+	margin-left: 0rem;
+}

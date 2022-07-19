@@ -1,0 +1,11 @@
+header #theme-toggle {
+	background-color: var(--grey);
+	color: var(--black);
+	/* border: 0.15rem solid var(--blue); */
+	border-radius: 12px;
+	padding: 0.4rem 1.5rem;
+	font-family: "nunito";
+	font-weight: 700;
+	font-size: 0.8rem;
+	transition: background ease 500ms;
+}
