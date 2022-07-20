@@ -5,14 +5,16 @@
 	border: 1px solid #83888d;
 	background-color: hsl(0, 9%, 89%);
 
-	padding: 0.9rem;
-	padding-top: 0.4rem;
+	/* padding: 0.9rem;
+	padding-top: 0.4rem; */
 
 	border-radius: 10px;
 
 	transform: scale(0);
-	transition: scale ease-in 20ms;
 	position: absolute;
+
+	transition: transform ease-in 100ms;
+	transform-origin: top left;
 }
 
 .active {
@@ -28,8 +30,13 @@
 
 .cm__item {
 	display: flex;
-	padding: 0.8rem 0;
+	padding: 0.9rem 0.9rem;
 	padding-right: 5rem;
+}
+
+.cm__item:hover {
+	background-color: rgb(246, 246, 246);
+	border-radius: 10px;
 }
 
 .cm__item_img {
@@ -43,10 +50,13 @@
 	margin: 0;
 
 	font-weight: 700;
+
+	text-decoration: none;
 }
 
 .divider {
 	border-top: 1px solid #83888d;
 	width: 100%;
 	margin: 0.4rem 0;
+	padding: 0 0.9rem;
 }

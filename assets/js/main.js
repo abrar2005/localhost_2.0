@@ -32,18 +32,21 @@ toggle.addEventListener("click", () => {
 // CONTEXT MENU //
 // ================================================= //
 
-const card = document.querySelector(".card");
-const customContextMenu = document.querySelector(".custom-context-menu");
+const customContextMenu = document.querySelector(".cm__main");
+let allAnchors = document.querySelectorAll("a");
 
-window.addEventListener("contextmenu", (e) => {
-	alert("ss");
-	e.preventDefault();
-	let topPosition = e.clientY;
-	let leftPosition = e.clientX;
-	customContextMenu.classList.add("active");
+allAnchors.forEach((e) => {
+	e.addEventListener("contextmenu", (e) => {
+		e.preventDefault();
+		let topPosition = e.clientY;
+		let leftPosition = e.clientX;
+		customContextMenu.classList.add("active");
 
-	customContextMenu.style.left = leftPosition + "px";
-	customContextMenu.style.top = topPosition + "px";
+		customContextMenu.style.left = leftPosition + "px";
+		customContextMenu.style.top = topPosition + "px";
+
+		console.log(e);
+	});
 });
 
 window.addEventListener("click", () => {
