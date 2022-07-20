@@ -16,7 +16,10 @@ usort($glob, function ($a, $b) {
 });
 ?>
 
-<p class="breadCrumb"><?php echo str_replace("./sites", "sites", $main_url); ?></p>
+<?php
+    $breadcrumb = str_replace("/", " > ", $main_url);
+?>
+<p class="breadCrumb"><?php echo str_replace(". > sites", " sites", $breadcrumb); ?></p>
 
 <table>
     <thead>
