@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/context_menu.css">
 
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
@@ -19,6 +20,8 @@
         <!-- DARKMODE BTN -->
         <button id="theme-toggle">LIGHT</button>
     </header>
+
+    <?php include("assets/includes/_context_menu.php") ?>
 
     <?php
     // SPECIFY WHICH FOLDER TO START AT WHEN YOU ENTER LOCALHOST
