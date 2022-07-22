@@ -1,5 +1,5 @@
 .cm__main {
-	width: min-content;
+	/* width: min-content; */
 	height: fit-content;
 
 	border: 1px solid #83888d;
@@ -18,7 +18,7 @@
 }
 
 .active {
-	transform: scale(1);
+	transform: scale(0.8);
 }
 
 .cm__main ul {

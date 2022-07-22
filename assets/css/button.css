@@ -8,4 +8,6 @@ header #theme-toggle {
 	font-weight: 700;
 	font-size: 0.8rem;
 	transition: background ease 500ms;
+	box-shadow: none;
+	border: none;
 }

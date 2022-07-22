@@ -46,7 +46,7 @@ h1 {
 	position: relative;
 }
 
-table {
+table{
 	width: 100%;
 	background-color: var(--dark-grey);
 	border-radius: 20px;

@@ -68,3 +68,11 @@ document.addEventListener("contextmenu", (e) => {
 window.addEventListener("click", () => {
 	customContextMenu.classList.remove("active");
 });
+
+// ================================================= //
+// New modal //
+// ================================================= //
+
+document.getElementById("new_folder_btn").addEventListener("click", () => {
+	document.querySelector(".new_modal").classList.toggle("modal_active");
+});

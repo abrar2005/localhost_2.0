@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/context_menu.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
 
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
@@ -21,7 +23,9 @@
         <button id="theme-toggle">LIGHT</button>
     </header>
 
+    <!-- context menu -->
     <?php include("assets/includes/_context_menu.php") ?>
+
 
     <?php
     // SPECIFY WHICH FOLDER TO START AT WHEN YOU ENTER LOCALHOST
@@ -35,6 +39,9 @@
     }
 
     ?>
+    
+    <!-- new modal -->
+    <?php include("assets/includes/_new_modal.php"); ?>
 
     <script src="assets/js/main.js"></script>
 </body>
